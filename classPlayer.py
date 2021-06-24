@@ -7,7 +7,6 @@ class Player:
         self.sexe = sexe
         self.classement = classement
     
-    
     def get_nom(self):
         return self.nom
         
@@ -24,11 +23,11 @@ class Player:
         return self.classement
 
 
-    def informations(self):
-        if self.result:
-            print(f"{self.nom}, {self.prenom}, {self.date}, {self.sexe}, {self.classement}, {self.result}")
-        else:
-            print(f"{self.nom}, {self.prenom}, {self.date}, {self.sexe}, {self.classement}, pas de résultats encore.")
+    def info_liste(self):
+        return ((self.prenom, self.classement))
+        
+    def info_rapport(self):
+        return (f"Information du joueur :\n{self.nom}\n{self.prenom}\n{self.date}\n{self.sexe}\n{self.classement}")
             
             
             
