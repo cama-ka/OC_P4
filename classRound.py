@@ -2,10 +2,10 @@ class Round:
     ''' classe d'un round '''
     def __init__(self):
         
-        joueur_choisi_1 = None
-        joueur_choisi_2 = None
-        result_1 = None
-        result_2 = None
+        self.joueur_choisi_1 = None
+        self.joueur_choisi_2 = None
+        self.result_1 = None
+        self.result_2 = None
         
     def choose_player_1(self, joueur_choisi_1):
         self.joueur_choisi_1 = joueur_choisi_1
@@ -51,9 +51,4 @@ class Round:
         print(self.result_1)
         self.result_2 = input(f"Entrez le résultat de {self.get_player_2()} > ")
         print(self.result_2)
-        
-        
-test = Round()
-test.choose_player_1("Karla")
-test.choose_player_2("Paco")
-test.enter_result()    
+       
