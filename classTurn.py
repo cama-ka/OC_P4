@@ -1,3 +1,5 @@
+from classPlayer import Player
+
 class Tournaments:
     ''' class d'un tournois '''
     def __init__(self, nom, lieu, date, nombre_de_tour, time, description):
@@ -8,6 +10,7 @@ class Tournaments:
         self.joueur = None
         self.time = time
         self.description =  description
+        
         
     def get_nom(self):
         return self.nom
@@ -33,11 +36,7 @@ class Tournaments:
     def get_description(self):
         return self.description
         
-    def verif(self):
-        if self.has_joueur():
-            print(f"Joueur ajouté.")
-        else:
-            print("pas de joueur ajouté")
+    def info_turn(self):
+        return (f" Informations du tournois : \n{self.nom}\n {self.lieu}\n{self.date}\n{self.nombre_de_tour}\n{self.time}\n{self.description}\n\n")
             
-            
-        
+     
