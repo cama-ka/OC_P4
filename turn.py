@@ -1,4 +1,4 @@
-from classPlayer import Player
+from player import Player
 
 class Tournaments:
     ''' class d'un tournois '''
@@ -6,7 +6,7 @@ class Tournaments:
         self.nom = nom
         self.lieu = lieu
         self.date = date
-        self.nombre_de_tour = nombre_de_tour
+        self.nombre_de_tour = 4
         self.joueur = None
         self.time = time
         self.description =  description
